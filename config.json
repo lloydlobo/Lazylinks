@@ -1,0 +1,39 @@
+{
+  "general": {
+    "title": "Lazylinks",
+    "window": {
+      "width": 300,
+      "height": 500
+    }
+  },
+  "links": [
+    "https://purrli.com",
+    "https://gitlab.com",
+    "https://github.com",
+    "https://bard.google.com",
+    "https://hackernews.com",
+    "https://chat.openai.com"
+  ],
+  "colors": {
+    "black": "#000000",
+    "white": "#FFFFFF",
+    "fg_primary": "#CDD4DF",
+    "fg_secondary": "#5C6370",
+    "fg_accent": "#E5C07B",
+    "bg_primary": "#282C34",
+    "bg_secondary": "#2C323D",
+    "bg_accent": "#61AFEF"
+  },
+  "fonts": {
+    "font_mono": "Source Code Pro",
+    "font_sans": "Helvetica",
+    "font_serif": "Garamond"
+  },
+  "typography": {
+    "text_sm": 8,
+    "text_base": 10,
+    "text_md": 12,
+    "text_lg": 14,
+    "text_xl": 16
+  }
+}
