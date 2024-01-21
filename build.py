@@ -4,12 +4,24 @@
 1. **Install PyInstaller:** `pip install pyinstaller`
 
 2. **Build the executable:**
-   - Single file: `pyinstaller --onefile main.py`
-   - GUI without console: `pyinstaller --onefile --noconsole main.py`
-   - Specific name: `pyinstaller --onefile --noconsole --name Lazylinks main.py`
-   - `pyinstaller --onefile --noconsole --name Lazylinks main.py`
+   - Single file: `pyinstaller --onefile lazylinks.py`
+   - GUI without console: `pyinstaller --onefile --noconsole lazylinks.py`
+   - Specific name: `pyinstaller --onefile --noconsole --name Lazylinks lazylinks.py`
+   - `pyinstaller --onefile --noconsole --name Lazylinks lazylinks.py`
 
 3. **Copy configuration file:** Place `config.json` (or similar) into the `dist` folder alongside the executable.
+
+**Dependencies:**
+
+# requirements.txt
+
+altgraph==0.17.4
+packaging==23.2
+pefile==2023.2.7
+pyinstaller==6.3.0
+pyinstaller-hooks-contrib==2024.0
+pywin32-ctypes==0.2.2
+setuptools==69.0.3
 """
 
 import os
@@ -31,7 +43,7 @@ def clean_up(exe_name):
 
 
 def main():
-    script_name = "main.py"
+    script_name = "lazylinks.py"
     exe_name = "Lazylinks"
     config_path = "config.json"
 
